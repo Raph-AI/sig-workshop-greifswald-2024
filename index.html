@@ -1,1 +1,212 @@
-<h1>Hello world!</h1>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Signature workshop</title>
+    <style>
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+      body {
+        font-family: 'Roboto Mono',  monospace;
+        font-size: 11pt;
+      }
+      table {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+      h2 small {
+        font-weight: normal;
+        font-size: 70%;
+      }
+      td, th {
+        padding: 0.5em;
+        text-align: center;
+      }
+      td {
+        border: 1px solid;
+      }
+      .container {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        flex-flow: row wrap;
+      }
+      .content {
+        width: 100%;
+      }
+      .panel {
+        flex: 1 0 100%;
+      }
+      .speakers {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+      }
+      .right {
+        margin-left: 1em;
+      }
+      .left {
+        margin-right: 1em;
+      }
+      .schedule {
+        display: flex;
+        flex-flow: column;
+        flex: 4 0 auto;
+      }
+      .logos {
+        text-align: center;
+        padding-top: 50px;
+      }
+      .logo {
+        width: 10%;
+        height: auto;
+        margin: 0 1em;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      @media (max-width:1414px) {
+        .panel {
+          flex: 1 0 100%;
+        }
+        .left, .right {
+          margin: 0;
+        }
+        .logos {
+          margin: 2em 2em 2em 0;
+          order: 1;
+        }
+        .schedule {
+          order: 2
+        }
+      }
+      td.time {
+        font-weight: bold;
+      }
+      tr.break {
+        background: whitesmoke;
+      }
+      td.break {
+        text-align: center;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: blue;
+      }
+      ul {
+        padding-inline-start: 0;
+      }
+      ul li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        white-space: pre-wrap;
+      }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Signature workshop</h1>
+        <h2>8&mdash;13 April, 2024 @ Greisfwald (Germany)</h2>
+      </div>
+      <div class="panel speakers">
+        <div style="flex: 1 0 100%">
+        <h1>List of speakers</h1>
+        </div>
+        <div style="flex: 1 0 25%;">
+        <h3>Keynote speakers</h3>
+        <ul>
+          <li>Harald Oberhauser</li>
+          <li>Terry Lyons</li>
+          <li>Hao Ni</li>
+          <li>Yuzuru Inahama</li>
+          <li>Kenji Fukumizu</li>
+          <li>Valentin de Bortoli</li>
+          <li>Adeline Fermanian</li>
+        </ul>
+        </div>
+        <div style="flex: 2 0 auto; margin-right: 100px;">
+        <h3 style="margin-bottom:0;">Invited speakers</h3>
+        <ul style="float: left;">
+          <li>Carlos Amendola</li>
+          <li>Kurusch Ebrahimi-Fard</li>
+          <li>Darrick Lee</li>
+          <li>Cristopher Salvi</li>
+          <li>Antonio Orvieto</li>
+          <li>Blanka Horvath</li>
+
+
+        </ul>
+        <ul style="float:right;">
+            <li>Elena Celledoni</li>
+            <li>Nikolas Tapia</li>
+            <li>Stephane Chretien</li>
+            <li>Fabian Harang</li>
+            <li>Tim Seynnaeve</li>
+        </ul>
+        </div>
+        <div style="flex: 1 0 25%;">
+          <h3>Organizing Committee</h3>
+          <ul>
+            <li>Joscha Diehl</li>
+            <li>Marianne Clausel</li>
+            <li>Konstantin Usevich</li>
+            <li>Nozomi Sugiura</li>
+            <li>Leonard Schmitz</li>
+            <li>Raphael Mignot</li>
+          </ul>
+        </div>
+      </div>
+        <div class="logos">
+          <img class="logo" src="DFG-logo.jpg" />
+          <img class="logo" src="UG-logo.svg" />
+          <img class="logo" src="WIKO-logo.svg" />
+        </div>
+      <div class="panel">
+        <div class="schedule">
+        <h1>Schedule</h1>
+        All times CET (GMT+2)
+        <table>
+          <tr><th></th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th></tr>
+          <tr><th class="time">09:00&ndash;09:30</td><td>Diffusion models (de Bortoli)</td><td>Neural ODEs (Fermanian)</td><td>Plenary (Oberhauser)</td><td>Plenary (Ni)</td><td>Plenary (TBD)</td><td>Plenary (Fermanian)</td></tr>
+          <tr><th class="time">09:30&ndash;10:00</td><td>Diffusion models (de Bortoli)</td><td>Neural ODEs (Fermanian)</td><td>Plenary (Oberhauser)</td><td>Plenary (Ni)</td><td>Plenary (TBD)</td><td>Plenary (Fermanian)</td></tr>
+          <tr class="break"><th class="time">10:00&ndash;10:30</td><td colspan=6 class="break">Coffee Break</td></tr>
+          <tr><th class="time">10:30&ndash;11:00</td><td>Diffusion models (de Bortoli)</td><td>Neural ODEs (Fermanian)</td><td>Talk (Amendola)</td><td>Talk (Salvi)</td><td>Talk (Harang)</td><td>Talk (TDB)</td></tr>
+          <tr><th class="time">11:00&ndash;11:30</td><td>Diffusion models (de Bortoli)</td><td>Neural ODEs (Fermanian)</td><td>Talk (Ebrahimi-Fard)</td><td>Talk (Orvieto)</td><td>Talk (Tapia)</td><td>Plenary(Lyons)</td></tr>
+          <tr><th class="time">11:30&ndash;12:00</td><td>Diffusion models (de Bortoli)</td><td>Neural ODEs (Fermanian)</td><td>Talk (Lee)</td><td>Talk (Horvath)</td><td>Talk (TBD)</td><td>Plenary(Lyons)</td></tr>
+          <tr class="break"><th class="time">12:00&ndash;13:00</td><td colspan=6 class="break">Lunch</td></tr>
+          <tr><th class="time">13:00&ndash;13:30</td><td>Neural ODEs (Fermanian)</td><td>Diffusion models (de Bortoli)</td><td>Gong talks</td><td>Talk (Celledoni)</td><td>Applications afternoon (Chretien)</td><td>END</td></tr>
+          <tr><th class="time">13:30&ndash;14:00</td><td>Neural ODEs (Fermanian)</td><td>Diffusion models (de Bortoli)</td><td>Gong talks</td><td>Talk (Seynnaeve)</td><td>TBD</td><td></td></tr>
+          <tr><th class="time">14:00&ndash;14:30</td><td>Neural ODEs (Fermanian)</td><td>Diffusion models (de Bortoli)</td><td>Gong talks</td><td>Talk (TBD)</td><td>TBD</td><td></td></tr>
+          <tr><th class="time">14:30&ndash;15:00</td><td>Neural ODEs (Fermanian)</td><td>Diffusion models (de Bortoli)</td><td>Poster + coffee</td><td>Poster + coffee</td><td>TBD</td><td></td></tr>
+          <tr><th class="time">15:00&ndash;15:30</td><td>Neural ODEs (Fermanian)</td><td>Diffusion models (de Bortoli)</td><td>Poster + coffee</td><td>Poster + coffee</td><td>Discussion + coffee</td><td></td></tr>
+          <tr><th class="time">15:30&ndash;16:00</td><td>Neural ODEs (Fermanian)</td><td>Diffusion models (de Bortoli)</td><td>Poster + coffee</td><td>Poster + coffee</td><td>Discussion + coffee</td><td></td></tr>
+          <tr><th class="time">16:00&ndash;16:30</td><td class="break">Discussion + coffee</td><td>Discussion + coffee</td><td>Plenary (Inahama)</td><td>Plenary (Fukumizu)</td><td>Plenary (de Bortoli)</td><td></td></tr>
+          <tr><th class="time">16:00&ndash;16:30</td><td class="break">Discussion + coffee</td><td>Discussion + coffee</td><td>Plenary (Inahama)</td><td>Plenary (Fukumizu)</td><td>Plenary (de Bortoli)</td><td></td></tr>
+        </table>
+        </div>
+      </div>
+      <div class="panel">
+        <h1>Abstracts</h1>
+        <h1>Keynote</h1>
+        <h2>Name Surname</h2>
+        <h3><i>Title</i></h3>
+        <p>Abstract ...</p>
+        <h1>Invited talks</h1>
+        <h2>Name Surname</h2>
+        <h3><i>Title</i></h3>
+        <p>Abstract ...</p>
+      </div>
+    </div>
+  </body>
+</html>
